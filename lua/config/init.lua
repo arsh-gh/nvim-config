@@ -11,3 +11,4 @@ vim.o.updatetime = 250
 vim.o.splitright = true
 vim.o.splitbelow = false
 vim.o.scrolloff = 10
+vim.opt.expandtab = true
