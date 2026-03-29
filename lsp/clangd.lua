@@ -151,6 +151,8 @@ return {
         -- WARN: This is not Goto Definition, this is Goto Declaration.
         --  For example, in C this would take you to the header.
         map("grD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
+        map("gE", vim.diagnostic.open_float, "[G]oto [E]rror diagnostic")
+        map("<C-h>", vim.lsp.buf.signature_help, "[G]oto [H]elp", "i")
 
         -- Fuzzy find all the symbols in your current document.
         --  Symbols are things like variables, functions, types, etc.
